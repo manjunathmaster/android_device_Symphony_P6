@@ -3,9 +3,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/Micromax/AQ5001/AQ5001-vendor.mk)
+$(call inherit-product-if-exists, vendor/Symphony/P6/P6-vendor.mk)
 
-LOCAL_PATH := device/Micromax/AQ5001
+LOCAL_PATH := device/Symphony/P6
 
 PRODUCT_CHARACTERISTICS := default
 
@@ -162,8 +162,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=mtp,adb
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.media.use-awesome=true
 
-PRODUCT_NAME := full_AQ5001
-PRODUCT_DEVICE := AQ5001
+PRODUCT_NAME := full_P6
+PRODUCT_DEVICE := P6
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
