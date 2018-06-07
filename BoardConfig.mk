@@ -154,6 +154,9 @@ TARGET_CPU_MEMCPY_OPT_DISABLE := true
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
 
+# Remove Stock FMRadio by Default.
+$(shell rm -rf $(LOCAL_PATH)/packages/apps/FMRadio)
+
 # Selinux
 BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
